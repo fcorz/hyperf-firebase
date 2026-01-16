@@ -63,7 +63,6 @@ class Application implements ApplicationInterface
             throw new \RuntimeException(sprintf('Firebase project [%s] not configured.', $this->name));
         }
 
-        // 封装配置获取
         if ($tenantId = $this->config->get("{$project}.auth.tenant_id")) {
             $this->factory = $this->factory->withTenantId($tenantId);
         }

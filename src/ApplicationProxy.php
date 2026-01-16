@@ -19,7 +19,7 @@ class ApplicationProxy extends Application
     public function __construct(ContainerInterface $container, string $name = 'app')
     {
         $this->name = $name;
-        
+
         parent::__construct($container);
     }
 }
